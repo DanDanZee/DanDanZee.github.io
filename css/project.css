@@ -1,0 +1,334 @@
+/*RESET CSS BEGIN*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/*RESET CSS END*/
+
+
+/*HELPER CLASS BEGIN*/
+
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 20px 0;
+}
+
+ul li,
+ol li {
+    margin-bottom: 10px;
+}
+
+
+/*HELPER CLASS END*/
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+/* NAVIGATION BAR STARTS HERE */
+
+header {
+  background: transparent;
+  width: 100%;
+  position: relative;
+
+}
+
+.nav_wrapper {
+    margin: 0 auto;
+    position: relative;
+    padding: 13px 0;
+    background: rgb(0,0,0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+
+.nav_wrapper ul li {
+    display: inline-block;
+    padding: 0 10px;
+    margin: 10px 20px;
+
+}
+
+.nav_wrapper ul li a {
+    font-size: 20px;
+    line-height: 28px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 3px;
+    transition: 0.3s;
+}
+
+.nav_wrapper ul li a:hover {
+    border-bottom: 1px solid white;
+}
+
+
+/* Resume Header */
+.project {
+  position: relative;
+  display: block;
+  margin: 70px auto;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.project::after {
+    display: block;
+    height: 2px;
+    background-color: #000000;
+    content: "";
+    width: 120px;
+    margin: 20px auto 0 auto;
+}
+
+
+
+.proj {
+    margin:30px 150px;
+    background-color: #EFEFEB;
+    border-radius: 50px;
+}
+
+
+.proj table {
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+.proj tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.proj td, th {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    line-height:125%;
+}
+
+.proj td h3 {
+    font-weight: bold;
+    font-size: 2.5vw;
+    text-align: left;
+}
+
+#magic img {
+    width: 280px;
+    height: 200px;
+}
+
+#link {
+    padding-left: 40px;
+}
+
+#link img {
+    width: 290px;
+    height: 200px;
+}
+
+#alpha img {
+    width: 290px;
+    height: 200px;
+}
+
+#link-title {
+    font-size: 2.2vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

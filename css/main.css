@@ -1,0 +1,507 @@
+/*RESET CSS BEGIN*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/*RESET CSS END*/
+
+
+/*HELPER CLASS BEGIN*/
+
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 20px 0;
+}
+
+ul li,
+ol li {
+    margin-bottom: 10px;
+}
+
+
+/*HELPER CLASS END*/
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+
+/* NAVIGATION BAR STARTS HERE */
+
+.cover_main {
+    margin-bottom: 100px;
+}
+
+header {
+  background: transparent;
+  width: 100%;
+  position: relative;
+
+}
+
+.nav_wrapper {
+    margin: 0 auto;
+    position: relative;
+    padding: 13px 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+
+.nav_wrapper ul li {
+    display: inline-block;
+    padding: 0 10px;
+    margin: 10px 20px;
+
+}
+
+.nav_wrapper ul li a {
+    font-size: 20px;
+    line-height: 28px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 3px;
+    transition: 0.3s;
+}
+
+.nav_wrapper ul li a:hover {
+    border-bottom: 1px solid white;
+}
+
+/* NAV BAR ON SCROLLING */
+header.sticky {
+    position: fixed;
+    transform: translateY(-200%);
+    transition: 0.3s;
+}
+
+body.scroll header.sticky {
+    transform: translateY(0);
+}
+
+/* NAVIGATION MAIN PAGE */
+
+.cover_main {
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('../images/gros.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+ul#scene li.name {
+    text-align: center;
+    font-size: 9vw;
+    color: white;
+    margin-bottom: 100px;
+}
+
+ul#scene li.phone {
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+ul#scene li.email {
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+ul#scene li.address {
+    text-align: center;
+    font-size: 22px;
+    color: white;
+}
+
+
+ul#scene {
+    margin-top: 200px;
+}
+
+/* SELF-INTRO PART STARTS HERE */
+
+.self_intro {
+    margin-bottom: 200px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.selfie {
+    float: left;
+    padding: 10px 10px;
+    border-color: #c1b324;
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 70px; 
+}
+
+.about_me {
+    padding: 30px 10px;
+    margin-left: 450px;
+    margin-right: 70px;
+    margin-bottom: 100px;
+}
+
+.about_me p {
+    font-size: 1.7vw;
+    line-height: 130%;
+    text-align: justify;
+}
+
+.about_me h2 {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 3.5vw;
+    color: black;
+}
+
+.about_me h2::after {
+    display: block;
+    height: 2px;
+    background-color: #000000;
+    text-align: center;
+    content: "";
+    width: 100px;
+    margin: 30px auto 0 auto;
+}
+
+
+/* FOOTER STARTS HERE */
+footer {
+    position: relative;
+    z-index: -2;
+    height: 50px;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+
+footer h1 {
+    position: relative;
+    font-size: 1vw;
+    text-align: center;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 10px;
+}
+
+/* OVERLAYER STARTS HERE */
+@media only screen and (max-width: 768px) {
+    .menu_trigger {
+        background: url('../images/hamburger-icon.svg') no-repeat center / cover;
+        background-color: rgba(0,0,0,0.1);
+        width: 35px;
+        height: 35px;
+        display: block;
+        z-index: 10;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    .main_overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.72);
+        z-index: 6;
+        display: none;
+    }
+
+    .main_overlay:after {
+        background: url('../images/close-icon.svg') no-repeat center / cover;
+        width: 35px;
+        height: 35px;
+        display: block;
+        content: "";
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        z-index: 20;
+      }
+
+      .menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background: #131313;
+        width: 100%;
+        max-width: 300px;
+        z-index: 30;
+        transform: translate3d(-100%, 0, 0);
+        transition: 0.3s;
+      }
+
+      nav.nav_wrapper {
+        background: transparent;
+      }
+
+      nav.nav_wrapper ul li {
+        display: block;
+        margin-top: 20px;
+        padding: 0;
+        padding-bottom: 20px;
+      }
+
+      nav.nav-wrapper ul li a {
+        font-size: 18px;
+        line-height: 23px;
+      }
+
+      nav.nav-wrapper ul li a:hover {
+        border-color: transparent;
+      }
+
+      body.menu-is-active .menu {
+        background: rgba(0,0,0,0.8);
+        transform: translate3d(0, 0, 0);
+        display: block;
+        padding: 0 15px;
+      }
+
+      body.menu-is-active .main_overlay {
+        display: block;
+      }
+
+      body.menu-is-active .menu_trigger {
+        display: none;
+      }
+
+      .self_intro {
+        margin-bottom: 150px;
+        display: flex;
+    }
+
+
+    .selfie {
+        margin: 10px;
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .about_me {
+        margin:10px;
+        padding: 30px 10px;
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .cover_main {
+        margin-bottom: 30px;
+    }
+
+    .self_intro {
+        margin-bottom: 100px;
+        display: block;
+    }
+
+
+    .selfie {
+        margin: 0 70px;
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .about_me p {
+        margin:30px;
+        padding: 30px 10px;
+        margin-bottom: 50px;
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
